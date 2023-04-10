@@ -1,7 +1,15 @@
-[![Donate](https://img.shields.io/badge/donate-paypal-yellowgreen.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZEW8TFQCU2MSJ&source=url)
-[![Docker Build Status](https://github.com/oznu/docker-homebridge/workflows/Build/badge.svg)](https://github.com/oznu/docker-homebridge/actions)
-[![Docker Pulls](https://img.shields.io/docker/pulls/oznu/homebridge.svg)](https://hub.docker.com/r/oznu/homebridge/)
-[![Discord](https://img.shields.io/discord/432663330281226270?color=728ED5&logo=discord&label=discord)](https://discord.gg/Cmq8a44)
+# Introduction
+
+Fork of [oznu/docker-homebridge](https://github.com/oznu/docker-homebridge) with two additional environment parameters:
+
+* `-e PGID` - for group id
+* `-e PUID` - for user id
+
+The homebridge daemon will run as the user id and group id provided. Set to 0 to run as root.
+
+The user and group must already exist for it to work.
+ 
+Original README below.
 
 # Homebridge Docker Image
 
